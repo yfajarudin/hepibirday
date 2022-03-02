@@ -1,0 +1,133 @@
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark/dark.css"><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script><link href="https://untukkamu.likeadream.repl.co/style.css" rel="stylesheet" type="text/css" /><script src="https://untukkamu.likeadream.repl.co/script.js"></script>
+<head>
+<!-- 
+This code was made by Rayya R!
+Blog: https://sinkronin.com
+Instagram: @rayyarrr
+TikTok: @rayyarr_
+-->
+</head>
+<body>
+<style>
+body{background-image: url("https://images.unsplash.com/photo-1562064233-55bfa0c0c7ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1434&q=80");background-repeat: no-repeat;background-size: 100% 100% 100%;}
+</style><div id="bodyblur"></div>
+
+<div id="konten"><div id="fotoloveu"><div class="image">
+<!-- Foto Akhir --><img src="https://i.postimg.cc/Rhzfr0FG/hbd.gif" id="animasi" width="130px" height="130px"/></div></div>
+
+<p class='catatan sek' data-text='&#9829;' id='koteks'>
+<b style="font-size:1.1rem">Barakallah fii umrik, <span id="kamu"></span> &#129395;</b><br>
+Semoga menjadi pribadi yang lebih baik lagi yaa, <br>
+Dimudahkan rezekinya, makin sholehah, <br>
+Dan semoga niat baik nya dilancarkan. <br>
+Love u &#10084;&#65039; <br>
+</p>
+
+</div>
+
+<!-- Lagu dan Pesan WA --><script>
+function play() {//Link Audio Bisa Diganti
+var audio = new Audio('https://doc-10-80-docs.googleusercontent.com/docs/securesc/p4j0c9p8f8se76mg0aqa359tpgj2rg35/1h5bbl5aqkou5lml141iqu2bspkijm8v/1646191950000/11140450324784276600/11140450324784276600/1WPDxnrNoKi7nWIR4dnOa4DpROB5TWkwz?e=download&ax=ACxEAsaeUuea1C1i6nL46j07LyCiaj3tOd7g25ZRlSves52-7PR-cd90dsr4-UwVTo34VGP-KRpQlxxzkK9uI598VedVSNIAwggW_ZZ_QJecQvU8arxohFIONr2xiirfaCct8w5nzMjjDejRAoCRF1FG9XzGIbayUzcr-2pAJECltpFMtAi2gayuwU7eKYRk37IkqcJ8KkucZUAK-SoEvmlD2nK3e4ZYStrlD8U6v7ISIikx7L5khBc9NGSwJI4XW8J2rhPeGJlk_Tlyc_J4dA8o6VLnIRms1QMqsqV4HoubmNT7sRzvX7FZ8Dm4KdxFM5iF0vQRfBXwgW7h6YpwpWiy9j9pdqU8jMviklkbsAEHbcZ2xRD1nP1sqe0xjRs53Ifs9A-LizGZ_kbBhqLoBDbe_HRdFhDb7GmOsqUegLVQos4aw9PXfklpnlOJE4h1-LTLWrfolhuzXrdTJcCruhtc9gmVzWKmOEE8bKFoOfglLUFxToSiSMO3yEcdwvlnBJdWJr54oJ8R6pe9CtbMiiQG5YspCIE1c6mPYFSHWsrMc_G1BnG2ycxD9a0owlsczwHaPvkW_gWkZ6L00mOvR3HOD1lhQSgv1VF1bL_sVCNnkJGwjIZoCWBwNes0NO4Lf0g7BhAKqOxRlu-fnbx92I6dD1uUDgiIJxhBzlBZnyk&authuser=0&nonce=c18ad9i886lmg&user=11140450324784276600&hash=r2evhkiof4atvq2r1toiih0aeui1q1f5');audio.play();audio.loop=true;audio.addEventListener('ended', function() {this.currentTime = 0;this.play();}, false);}         
+
+//Pesan WhatsApp
+</script>
+ 
+<script type="text/javascript">            
+            var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
+            const swals = Swal.mixin({
+                backdrop: 'rgba(0,0,123,0.4)', confirmButtonColor: '#55009E', cancelButtonColor: '#FFCA00', allowOutsideClick: false,
+            });
+            async function mulai(){          	
+                var { value: nama } = await swals.fire({
+                    title: 'Masukin nama kamu',
+                    input: 'text',
+                    confirmButtonText: 'Lanjut',
+                    showCancelButton: false,
+                });                           
+                if(nama && nama.length < 9){
+                	play();
+                	window.nama = nama;
+                    document.getElementById("kamu").innerHTML = "" + window.nama;
+                    await swals.fire('Hai, ' + nama + ' sayang &#129395;', 'Yang hari ini ulang tahun, Aku ada pilihan nih buat kamu');                    
+                    pilihwarna();                   
+                //                                   
+                } else {
+                    await swals.fire('Ups!', 'Di isi dulu dong namanya!');
+                    mulai();
+                }
+            }            
+            mulai();
+</script>
+<!-- Di bawah ini JANGAN DIEDIT SEMBARANGAN -->
+<script>
+  function tombol() {document.getElementById('tombWA').style.visibility = "visible";document.getElementById('tombWA').style.opacity = "1";}  
+  async function expl(){document.getElementById('bodyblur').style.opacity = "1";document.getElementById('bodyblur').style.visibility = "visible";setTimeout(duar,200);}
+  
+async function duar(){
+var e1 = document.getElementById('animasi');e1.classList.add("degdeg");
+document.getElementById('konten').style.top = "0";document.getElementById('fotoloveu').style.opacity = "1";document.getElementById('fotoloveu').style.height = "140px";document.getElementById('fotoloveu').style.margin = "50px 0 0 0";document.getElementById('koteks').style.opacity = "1";
+setTimeout(tombol,4000);setInterval(createHeart,200);
+document.body.style.backgroundColor = "#000";
+}
+
+const body = document.querySelector("body");
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "fas fa-heart";
+    heart.style.left = (Math.random() * 90)+"vw";
+    heart.style.animationDuration = (Math.random()*3)+2+"s"
+    body.appendChild(heart);
+}
+setInterval(function name(params) {
+    var heartArr = document.querySelectorAll(".fa-heart")
+    if (heartArr.length > 50) {
+       heartArr[0].remove()
+    }
+},100);
+
+async function pilihwarna(){
+  var { isConfirmed: warna } = await swals.fire({
+  title: nama + ' mau kado apa nih?',
+  showCancelButton: true,
+  confirmButtonText: 'Saku sebelah kanan',
+  cancelButtonText: 'Saku sebelah kiri',
+});
+if(warna){
+    await swals.fire('Ciee yang pilih saku sebelah kanan, tapi sayang cuma dapet duit 2000 doang muehehheh &#129395;');
+    var { isConfirmed: warna2 } = await swals.fire({
+    title: nama + ' yakin tetep pilih kado yg ini?', 
+    text: 'Atau mau ganti pilihan kadonya?', showCancelButton: true,
+    confirmButtonText: 'Yakin',
+    cancelButtonText: 'Ganti',
+}); 
+if(warna2){
+    await swals.fire('Oke!', `nanti aku kasih uang nya yaa. Sekarang yang bisa aku kasih duluan cuma doa &#10084;&#65039;`);
+    expl();
+  } else {
+    await swals.fire('Eeiiittsss!', 'ga bisa di ganti, udah terima aja yaak &#129315;');
+    await swals.fire(`Sekarang aku kasih kado doa dulu aja yaa &#10084;&#65039;`);
+    expl();
+}
+//Selingan
+  } else {
+    await swals.fire('Ciee yang pilih Saku sebelah kanan, tapi sayang cuma dapet duit 1000 doang mueheheh &#129395;');
+    var { isConfirmed: warna2 } = await swals.fire({
+    title: nama + ' yakin tetep pilih kado yg ini?', 
+    text: 'Atau mau ganti pilihan kadonya?', showCancelButton: true,
+    confirmButtonText: 'Ganti',
+    cancelButtonText: 'Yakin',
+});
+if(warna2){    
+    await swals.fire('Eeiiittsss!', 'ga bisa di ganti, udah terima aja yaak &#129315;');
+    await swals.fire(`Sekarang aku kasih kado doa dulu aja yaa &#10084;&#65039;`);
+    expl();
+  } else {
+    await swals.fire('Oke!', `nanti aku kasih uang nya yaa. Sekarang yang bisa aku kasih duluan cuma doa &#10084;&#65039;`);
+    expl();
+}
+}
+}
+</script>
+</body>
+</html>
